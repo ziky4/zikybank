@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ziky.bank.controller.AccountController">
+   <children>
+      <TableView fx:id="accountTable" prefHeight="370.0" prefWidth="682.0">
+        <columns>
+          <TableColumn fx:id="numberColumn" prefWidth="75.0" text="Number" />
+          <TableColumn fx:id="creationTimeColumn" prefWidth="89.0" text="Creation Time" />
+            <TableColumn fx:id="balanceColumn" prefWidth="61.0" text="balance" />
+            <TableColumn fx:id="overdraftColumn" prefWidth="75.0" text="overdraft" />
+            <TableColumn fx:id="dailyLimitColumn" prefWidth="75.0" text="daily limit" />
+            <TableColumn fx:id="monthlyLimitColumn" prefWidth="75.0" text="monthly limit" />
+            <TableColumn fx:id="typeColumn" prefWidth="75.0" text="type" />
+            <TableColumn fx:id="currencyColumn" prefWidth="75.0" text="currency" />
+            <TableColumn fx:id="ownerColumn" prefWidth="81.0" text="owner" />
+        </columns>
+      </TableView>
+      <Button layoutX="631.0" layoutY="374.0" mnemonicParsing="false" text="Delete" />
+      <Button layoutX="549.0" layoutY="374.0" mnemonicParsing="false" onAction="#handleNewTransaction" prefHeight="25.0" prefWidth="82.0" text="Transaction" />
+      <Button layoutX="512.0" layoutY="374.0" mnemonicParsing="false" text="Edit" />
+      <Button layoutX="472.0" layoutY="374.0" mnemonicParsing="false" onAction="#handleNewAccount" text="New" />
+   </children>
+</AnchorPane>

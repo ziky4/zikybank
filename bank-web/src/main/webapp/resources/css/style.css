@@ -1,0 +1,127 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    color: #333;
+}
+
+.topmenu {
+    /*margin: 2em 0;*/
+    padding: 0.3em 0;
+    margin: 0 auto;
+    /*background-color: #2980b9;*/
+    background-color: #2d3e50;
+    color: #1f8dd6;
+    /*text-align: right;*/
+}
+
+input[type="date"]::-webkit-clear-button{
+    display:none;
+}
+
+.toptext {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 800px;
+}
+
+.toptext a {
+    color: #1f8dd6;
+    text-decoration: none;
+}
+
+.toptext .left {
+    float: right;
+    position: relative;
+    /*right: -19%;*/
+}
+
+.toptext .mid {
+    /*float: right;
+    /*position: relative;
+    /*left: -40%; /* or right 50% */
+    /*text-align: center;*/
+    margin-left: 20px;
+}
+
+.toptext a img{
+    vertical-align: middle;
+
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 800px;
+}
+
+.page-header {
+    /*margin: 2em 0;*/
+    padding: 1.5em 0;
+    /*background-color: #2980b9;*/
+    background-color: #1f8dd6;
+}
+
+.page-title,
+.page-desc {
+    margin: 0;
+}
+
+.page-title {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.page-desc {
+    color: #afd5ed;
+    font-weight: 300;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 800px;
+    margin-bottom: 50px;
+    line-height: 1.6em;
+    /*min-height: 700px;*/
+}
+
+.content-subhead {
+    /*margin: 3em 0 1.5em 0;*/
+    font-weight: 300;
+    color: #888;
+}
+
+.footer {
+    padding: 1.5em 0;
+    background-color: #111;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+hr {
+    margin: 0;
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    /*background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);*/ 
+}
+
+/*div#centerDiv {
+    width: 600px;
+    text-align: center;
+}*/
+

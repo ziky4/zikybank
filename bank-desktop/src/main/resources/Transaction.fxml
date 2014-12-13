@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ziky.bank.controller.TransactionController">
+   <children>
+      <TableView fx:id="txTable" prefHeight="400.0" prefWidth="690.0">
+        <columns>
+          <TableColumn fx:id="txId" prefWidth="43.0" text="Id" />
+          <TableColumn fx:id="creationDate" prefWidth="192.0" text="Creation Date" />
+            <TableColumn fx:id="amount" prefWidth="68.0" text="Amount" />
+            <TableColumn fx:id="currency" prefWidth="70.0" text="Currency" />
+            <TableColumn fx:id="bank" prefWidth="78.0" text="Bank" />
+            <TableColumn fx:id="accountFrom" prefWidth="75.0" text="From" />
+            <TableColumn fx:id="accountTo" prefWidth="82.0" text="To" />
+            <TableColumn fx:id="type" prefWidth="82.0" text="Type" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context-3.1.xsd" >
+
+   <!-- <bean id="emf" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="jpaVendorAdapter" ref="jpaVendorAdapter" />
+        <property name="packagesToScan" value="com.ziky.bank.domain" />
+        <property name="jpaProperties">
+            <props>
+                <prop key="hibernate.hbm2ddl.auto">create-drop</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="jpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+        <property name="database" value="POSTGRESQL" />
+        <property name="showSql" value="false" />
+        <property name="generateDdl" value="true" />
+        <property name="databasePlatform" value="org.hibernate.dialect.PostgreSQL82Dialect" />
+    </bean>-->
+
+    <bean id="dataSource" class="org.apache.tomcat.dbcp.dbcp.BasicDataSource">
+        <property name="driverClassName" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql://localhost:5432/bankDB"/>
+        <property name="username" value="ziky"/>
+        <property name="password" value="admin"/>
+        <property name="defaultAutoCommit" value="true"/>
+    </bean>
+
+    <!-- To enable EntityManager injection to property annotated @PersistentContexxt -->
+    <!--<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />-->
+
+    <!-- Spring JPA exception translation -->
+    <!--<bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />-->
+
+    <!-- To avoid to explicity declare classes within specified package as beans.
+    All classes within this package are cosidered as beans.-->
+    <context:component-scan base-package="com.ziky.bank.repository" />
+
+    <!-- Java Persistence API Transaction -->
+    <!--<bean id="txManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="emf" />
+    </bean>-->
+
+</beans>

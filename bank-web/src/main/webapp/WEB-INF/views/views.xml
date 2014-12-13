@@ -1,0 +1,56 @@
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition name="template" template="/WEB-INF/views/template.jsp">
+    </definition>
+
+    <definition name="home" extends="template">
+        <put-attribute name="top" value="/WEB-INF/views/main_menu.jsp" />
+        <put-attribute name="content" value="/WEB-INF/views/home.jsp" />
+        <put-attribute name="login" value="/WEB-INF/views/loginTop.jsp" />
+        <put-attribute name="name" value="/WEB-INF/views/nameTop.jsp" />
+    </definition>
+
+    <definition name="payment" extends="template">
+        <put-attribute name="top" value="/WEB-INF/views/main_menu.jsp" />
+        <put-attribute name="content" value="/WEB-INF/views/payment.jsp" />
+        <put-attribute name="login" value="/WEB-INF/views/loginTop.jsp" />
+        <put-attribute name="name" value="/WEB-INF/views/nameTop.jsp" />
+    </definition>
+
+    <definition name="listing" extends="template">
+        <put-attribute name="top" value="/WEB-INF/views/main_menu.jsp" />
+        <put-attribute name="content" value="/WEB-INF/views/listing.jsp" />
+        <put-attribute name="login" value="/WEB-INF/views/loginTop.jsp" />
+        <put-attribute name="name" value="/WEB-INF/views/nameTop.jsp" />
+    </definition>
+
+    <definition name="login" extends="template">
+        <put-attribute name="top" value="/WEB-INF/views/main_menu.jsp" />
+        <put-attribute name="content" value="/WEB-INF/views/login.jsp" />
+        <put-attribute name="login" value="/WEB-INF/views/loginTop.jsp" />
+        <put-attribute name="name" value="/WEB-INF/views/nameTop.jsp" />
+    </definition>
+
+    <definition name="info" extends="template">
+        <put-attribute name="top" value="/WEB-INF/views/main_menu.jsp" />
+        <put-attribute name="content" value="/WEB-INF/views/info.jsp" />
+        <put-attribute name="login" value="/WEB-INF/views/loginTop.jsp" />
+        <put-attribute name="name" value="/WEB-INF/views/nameTop.jsp" />
+    </definition>
+
+    <definition name="infoStatus" extends="template">
+        <put-attribute name="top" value="/WEB-INF/views/main_menu.jsp" />
+        <put-attribute name="content" value="/WEB-INF/views/infoStatus.jsp" />
+        <put-attribute name="login" value="/WEB-INF/views/loginTop.jsp" />
+        <put-attribute name="name" value="/WEB-INF/views/nameTop.jsp" />
+    </definition>
+
+    <definition name="transactionDetail" extends="template">
+        <put-attribute name="top" value="/WEB-INF/views/main_menu.jsp" />
+        <put-attribute name="content" value="/WEB-INF/views/transactionDetail.jsp" />
+        <put-attribute name="login" value="/WEB-INF/views/loginTop.jsp" />
+        <put-attribute name="name" value="/WEB-INF/views/nameTop.jsp" />
+    </definition>
+</tiles-definitions>

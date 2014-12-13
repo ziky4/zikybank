@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="287.0" prefWidth="238.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ziky.bank.controller.EmployeeEditController">
+   <children>
+      <GridPane prefHeight="259.0" prefWidth="238.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.0" minWidth="10.0" prefWidth="90.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="148.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Login" />
+            <Label text="Firs Name" GridPane.rowIndex="1" />
+            <Label text="Last Name" GridPane.rowIndex="2" />
+            <Label text="Id Card Number" GridPane.rowIndex="3" />
+            <Label text="Date of Birth" GridPane.rowIndex="4" />
+            <Label text="Email" GridPane.rowIndex="5" />
+            <Label text="Phone" GridPane.rowIndex="6" />
+            <Label text="Address" GridPane.rowIndex="7" />
+            <DatePicker fx:id="dateField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="loginField" GridPane.columnIndex="1" />
+            <TextField fx:id="firstNameFiled" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="lastNameField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="cardNumberField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="phoneField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="addressField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label text="Password" GridPane.rowIndex="8" />
+            <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+         </children>
+      </GridPane>
+      <HBox layoutX="90.0" layoutY="241.0" prefHeight="25.0" prefWidth="148.0" />
+      <Button layoutX="172.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="25.0" prefWidth="66.0" text="Cancel" />
+      <Button layoutX="104.0" layoutY="261.0" mnemonicParsing="false" onAction="#addPerson" prefHeight="25.0" prefWidth="68.0" text="Ok" />
+   </children>
+</AnchorPane>
